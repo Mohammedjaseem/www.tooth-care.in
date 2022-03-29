@@ -1,0 +1,59 @@
+.tf-counter {
+	position: relative;
+}
+
+.tf-counter .counter-icon {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.tf-counter.style1:after {
+	content: '';
+	width: 77%;
+	height: 2px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 0;
+	background: #33B9CB;
+	-webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.tf-counter.style1:hover:after {
+	width: 100%;
+}
+
+.tf-counter.style2 .wrap-icon-title {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.tf-counter .counter-icon {
+	-webkit-transition: all 1s ease 0s;
+    -moz-transition: all 1s ease 0s;
+    -ms-transition: all 1s ease 0s;
+    -o-transition: all 1s ease 0s;
+    transition: all 1s ease 0s;
+}
+
+.tf-counter:hover .counter-icon {
+	-webkit-transform: rotateY( 360deg);
+    transform: rotateY( 360deg);
+}
+
+.tf-counter.style3 .wrap-counter {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.tf-counter.style4 .wrap-number-title {
+	display: flex;
+	align-items: center;
+}
